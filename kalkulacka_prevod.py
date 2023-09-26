@@ -1,4 +1,5 @@
 from PyQt5 import QtWidgets, QtCore
+from api_keys import api_prevod
 import requests
 
 class KalkulackaMeny(QtWidgets.QMainWindow):
@@ -77,7 +78,7 @@ class KalkulackaMeny(QtWidgets.QMainWindow):
 
         payload = {}
         headers= {
-        "apikey": "F1FECq6BpcL44GHVGahNIc4Pxg7Ac8dZ"
+        "apikey": api_prevod
         }
         try:
             response = requests.request("GET", url, headers=headers, data = payload)

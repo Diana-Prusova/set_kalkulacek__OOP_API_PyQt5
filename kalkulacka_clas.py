@@ -57,8 +57,6 @@ class KalkulackaClasic(QtWidgets.QMainWindow):
         self.vypocti_button.clicked.connect(self.vypocti)
         
 
-
-    
     def vycisti(self):
         """
         Funkce po vypočtení příkladu vyčistí 
